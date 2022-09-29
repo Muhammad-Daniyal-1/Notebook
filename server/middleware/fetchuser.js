@@ -12,5 +12,4 @@ const fetchUser = async (req, res, next) => {
         res.status(401).json({ msg: 'Token is not valid' });
     }
 };
-
 module.exports = fetchUser;
