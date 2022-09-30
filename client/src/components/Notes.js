@@ -13,7 +13,7 @@ const Notes = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.getItem('toekn')) {
+    if (localStorage.getItem('token')) {
       getNotes();
     } 
     else {

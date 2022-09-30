@@ -21,10 +21,7 @@ const Signup = (props) => {
     if (json.success) {
       localStorage.setItem('token', json.authtoken);
       navigate('/')
-      props.showAlert("Account created successfully", "success")
-    } else {
-      props.showAlert("Invalid Credentials", "danger")
-    }
+    } 
   };
 
   const onChange = (e) => {
@@ -32,6 +29,7 @@ const Signup = (props) => {
   };
   return (
     <div className="container">
+      <h1 className="my-5 text-center">Sign Up </h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
